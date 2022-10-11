@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Registration Page</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <div class="col-6 off-3">
+    <form action="processform.php" method="POST">
+    <p>
+      <label for="first_name">Firstname</label><br />
+      <input type="text" name="first_name" placeholder="Enter your firstname" />
+    </p>
+    <p>
+      <label for="last_name">Lastname</label><br />
+      <input type="text" name="last_name" placeholder="Enter your lastname" />
+    </p>
+    <p>
+      <label for="Phone number">Phone number</label><br />
+      <input type="text" name="Phone number" placeholder="contact" />
+    </p>
+    <p>
+      <label for="email">EMAIL</label><br />
+      <input type="text" name="email" placeholder="Enter your email" />
+    </p>
+    <p>
+      <label for="color">Favorite color</label><br />
+      <select name="Color">
+        <option> </option>
+        <option>Red</option>
+        <option>Green</option>
+        <option>Nude</option>
+        <option>Yellow</option>
+      </select>
+    </p>  
+    <p>
+      <input type="radio" name="gender" value="male" id="gender-male" />
+      <label for="gender-male"> Male</label>
+      <input type="radio" name="gender" value="female" id="gender-female" />
+      <label for="gender-female"> Female</label>
+    </p>
+    <p>
+      <label for="datemin">Date:</label>
+      <input type="date" id="datemin" name="datemin" min="2000-01-02">
+      <br><br>
+    </p>
+      <input class="btn btn--form" type="submit" value="Register" />
+    
+    <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+    <div id="id01" class="modal">
+ 
+      <form class="modal-content animate" action="/action_page.php">
+            <div>
+              <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+           </div>
+ 
+          <div class="container">
+            <label><b>Email</b></label>
+            <input type="text" placeholder="Enter Email" name="uname" required>
+            
+            <br />         
+            <label><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+ 
+            <button type="submit">Login</button>
+          </div>
+ 
+            <div class="container" style="background-color:#f1f1f1">
+            </div>
+      </form>
+    </div> 
+  </form>
+
+  </div>
+  
+  <script src="script.js"></script>
+
+  <!--
+  This script places a badge on your repl's full-browser view back to your repl's cover
+  page. Try various colors for the theme: dark, light, red, orange, yellow, lime, green,
+  teal, blue, blurple, magenta, pink!
+  -->
+  <script src="https://replit.com/public/js/replit-badge.js" theme="blue" defer></script>
+</body>
+
+</html>
